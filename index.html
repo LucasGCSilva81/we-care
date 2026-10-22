@@ -1,38 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <title>We care | Stúdio</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>About Your Pet</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
-    <header>
-        <a class="link-header">HOME</a>
-        <a class="link-header">ABOUT</a>
-        <a class="link-header">PRODUCT</a>
-        <a class="link-header">SERVICE</a>
-        <a class="link-header">CONTACT</a>
-        <button class="button-header">LOGIN</button>
+    <header class="site-header">
+        <a class="brand" href="index.html">We Care <span>Studio</span></a>
+
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">☰</button>
+
+        <nav class="nav-links" id="nav-links">
+            <a class="active" href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+            <a href="contact.html">Let's Talk!</a>
+        </nav>
     </header>
+    
     <main>
-        <img src="./img/your.pet.jpg" alt="your pet logo" class="img-logo">
-        <section>
-        <h1>WE CARE</h1>
-        <h2>About Your Pet</h2>
-        <p>Mais do que um pet, ele é parte da sua família. E a gente sabe o quanto você quer ver o rabinho abanar de felicidade e os olhos brilhando de paz. Aqui, cada carinho é sincero, cada brincadeira é levada a sério e cada rotina é cumprida com muito amor. Cuidamos do seu pet como se fosse nosso, para que você fique com o coração tranquilo.</p>
-        <button class="button-main">Eplore</button>
-        </section>       
+        <section class="hero reveal">
+            <div class="hero-content">
+                <span class="eyebrow">CREATIVITY • INNOVATION • RESULTS</span>
+
+                <h1>Ideas that transform into <span>experiences.</span></h1>
+
+                <p>Explore our solutions, discover new possibilities,
+                    and find what you need to take the next step.</p>
+
+                <div class="hero-action">
+                    <a class="button-main" href="products.html">Explore products ↗</a>
+                    <a class="button-secondary" href="contact.html">Get to know the company</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div><strong>01.</strong><span>INNOVATION</span></div>
+                    <div><strong>02.</strong><span>QUALITY</span></div>
+                    <div><strong>03.</strong><span>TRUST</span></div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="visual-orbit"></div>
+                <div class="visaul-card">
+                    <span class="visual-icon">✦</span>
+                    <span class="visual-label">NEW POSSIBILITIES</span>
+                    <h2>The next level begins here.</h2>
+                    <p>Your next project deserves something extraordinary.</p>
+                    <a href="products.html">Discovering solutions ↗</a>
+                </div>
+                <span class="floating-star star-one">✳</span>
+                <span class="floating-star star-two">✦</span>
+            </div>
+        </section>
+
+        <section class="section-block reveal">
+            <span class="eye-brow">Discover We Care Studio</span>
+            <h2 class="section-title">Everything starts with a good idea.</h2>
+            <p class="section-description">Explore our company, discover the solutions we offer,
+                and get in touch to find out how we can help.</p>
+
+                <div class="feature-grid">
+                    <a class="feature-card" href="about.html">
+                        <span class="feature-icon">◈</span>
+                        <h3>About Us</h3>
+                        <p>Discover our history, our vision, and our values.</p>
+                        <span class="card-link">Get to know the company</span>    
+                    </a>
+
+                    <a class="feature-card" href="contact.html">
+                        <span class="feature-icon">⌁</span>
+                        <h3>Let's Talk</h3>
+                        <p>Tell us what you’re looking for and get in touch.</p>
+                        <span class="card-link">Contact us</span>
+                    </a>
+                </div>
+        </section>
     </main>
-     <p class="layout">Segue link do layout. <a href="https://www.figma.com/design/e05eBQ6NZjtoDxGe8vFh03/We-Care-Your-Pet-3?node-id=0-1&p=f&t=e5NncCO4AZ4SYxlN-0" target="_blank">Clique aqui</a>.</p>
-    <footer class="footer-figma">
-        <p>&copy;Projeto figma we care about yor pet. Todos os direitos reservados.</p>
+
+    <footer class="site-footer">
+        <a class="brand" href="index.html">We Care<span>Studio.</span></a>
+        <p>Ideas that inspire new possibilities.</p>
+        <small>© <span class="current-year"></span>We Care Studio. Demonstration project.</small>
     </footer>
 </body>
-
-</html>
