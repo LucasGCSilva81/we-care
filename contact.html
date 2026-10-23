@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We care | Stúdio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">We Care <span>Studio</span></a>
+
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">☰</button>
+
+        <nav class="nav-links" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a class="active" href="contact.html">Contact</a>
+            <a href="#contact-form">Send message</a>
+        </nav>
+    </header>
+
+    <main class="page-container">
+        <section class="page-hero reveal">
+            <span class="eyebrow">Contact Us</span>
+            <h1>Shall we bring your idea <span>to life?</span></h1>
+            <p>Send your message using the form below.
+                It will be a pleasure to learn about your project.</p>
+        </section>
+
+        <section class="contact-layout reveal">
+            <div class="contact-intro">
+                <span class="feature-icon">✉</span>
+                <h2>We are here to listen to you.</h2>
+                <p>Questions, suggestions, or interested in our products?
+                    Use the form to let us know what you need.</p>
+                <div class="contact-note">
+                    <strong>Personalized service</strong>
+                    <p>Tell us a bit about your needs so we can assist you more easily.</p>
+                </div>
+            </div>
+
+            <form id="contact-form" class="contact-form">
+                <label for="name">Your Name</label>
+                <input id="name" name="name" type="text" placeholder="Enter your name" required minlength="2">
+
+                <label for="email">Your E-mail</label>
+                <input id="email" name="email" type="email" placeholder="Enter your e-mail" required>
+
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject" required>
+                    <option value="">Subject</option>
+                    <option value="products">Product information</option>
+                    <option value="services">Service information</option>
+                    <option value="other">Another subject</option>
+                </select>
+
+                <label for="message">Your message</label>
+                <textarea id="message" name="message" rows="5" placeholder="How can we help?" required
+                    minlength="10"></textarea>
+
+                <button type="submit" class="button-main">Send message ↗</button>
+                <p id="form-feedback" class="form-feedback" aria-live="polite"></p>
+                <small>This form is for demonstration purposes and does not send data to a server.</small>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <a class="brand" href="index.html">We Care<span>Studio.</span></a>
+        <p>Ideas that inspire new possibilities.</p>
+        <small>© <span class="current-year"></span>We Care Studio. Demonstration project.</small>
+    </footer>
+
+</body>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We care | Stúdio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">We Care <span>Studio</span></a>
+
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">☰</button>
+
+        <nav class="nav-links" id="nav-links">
+            <a class="active" href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+           <a class="nav-cta" href="contact.html">Let's Talk!</a>
+        </nav>
+    </header>
+
+    <main class="page-container">
+        <section class="page-hero reveal">
+            <span class="eyebrow">OUR CATALOG</span>
+            <h1>Find something <span>extraordinary</span></h1>
+            <p>Explore the demonstration options and use the search feature
+                to find what you are looking for.</p>
+        </section>
+
+        <section class="catalog reveal">
+
+            <div class="catalog-controls">
+                <input id="product-search" type="search" placeholder="Search products..." aria-label="Search products">
+
+                <select id="category-filter" aria-label="Filter by category">
+                    <option value="all">All Categories</option>
+                    <option value="design">Design</option>
+                    <option value="digital">Digital</option>
+                    <option value="consultancy">Consultancy</option>
+                </select>
+
+            </div>
+
+            <p id="product-count" class="results-count" aria-live="polite"></p>
+
+            <div class="product-grid">
+                <article class="product-card" data-category="design">
+                    <div class="product-art art-purple"><span>✳</span></div>
+                    <div class="product-info">
+                        <span class="product-tag">DESIGN</span>
+                        <h2>Creative kit</h2>
+                        <p>A demonstrative solution for exploring new visual ideas.</p>
+                        <button class="product-details" data-title="Creative kit"
+                            data-description="An example of a product geared toward creativity and visual creation. Replace this description with the actual information from your catalog."
+                            data-price="Price upon request">View details ↗
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="digital">
+                    <div class="product-art art-green"><span>⌘</span></div>
+                    <div class="product-info">
+                        <span class="product-tag">DIGITAL</span>
+                        <h2>A proposed tool to facilitate everyday tasks.</h2>
+                        <button class="product-details" data-title="Digital solution"
+                            data-description="An example of a digital solution, which could be an application, software, or service offered by your company."
+                            data-price="Price upon request">View details ↗
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="consultancy">
+                    <div class="product-art art-coral"><span>◇</span></div>
+                    <div class="product-info">
+                        <span class="product-tag">CONSULTANCY</span>
+                        <h2>Strategic Plan</h2>
+                        <p>A service proposal for organizing projects and objectives.</p>
+                        <button class="product-details" data-title="Strategic Plan"
+                            data-description="Example of a consulting service. Customize this content according to the services actually offered."
+                            data-price="Price upon request">View details ↗
+                        </button>
+                    </div>
+                </article>
+            </div>
+
+            <p id="no-products" class="empty-state" hidden>No products found. Try another search.</p>
+
+        </section>
+
+        <dialog id="product-dialog" class="product-dialog">
+            <button id="close-dialog" class="dialog-close" aria-label="Close details">X</button>
+            <h2 id="dialog-title"></h2>
+            <p id="dialog-description"></p>
+            <p id="dialog-price" class="dialog-price"></p>
+            <a class="button-main" href="contact.html">I am interested</a>
+        </dialog>
+    </main>
+
+    <footer>
+        <a class="brand" href="index.html">We Care<span>Studio.</span></a>
+        <p>Ideas that inspire new possibilities.</p>
+        <small>© <span class="current-year"></span>We Care Studio. Demonstration project.</small>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
