@@ -1,0 +1,325 @@
+:root {
+    --purple: #665ae1;
+    --purple-dark: #4b3fc0;
+    --lime: #adff00;
+    --gray-dark: #515151;
+    --gray: #848484;
+    --gray-light: #989d9c;
+    --white: #ffffff;
+    --background: #f7f7fc;
+    --border: #e8e6f3;
+    --shadow: 0 18px 50px rgba(55, 44, 120, 0.10);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat" sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    color: var(--gray-dark);
+    background: radial-gradient(ellipse at 90% 5%¨, #ece9ff 0, transparent 32% var(--backgound));
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button, input, select, textarea {
+    font: inherit;
+}
+
+button, input, select, textarea {
+    -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+    outline: 3px solid var(--purple);
+    outline-offset: 4px;
+}
+
+.site-header {
+    width: min(1320px, 92%);
+    margin: 0 auto;
+    padding: 28px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.brand {
+    flex-shrink: 0;
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+.brand span {
+    color: var(--purple);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+}
+
+.nav-links a {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--gray);
+    transition: color 0.25s ease;
+}
+
+.nav-links > a:hover, .nav-links > a.active {
+    color: var(--purple);
+}
+
+.nav-links .nav-cta {
+    padding: 13px 19px;
+    border-radius: 30px;
+    background: var(--purple);
+    color: var(--white);
+    transition: background 0.25s, transform 0.25s;
+}
+
+.nav-links .nav-cta:hover {
+    background: var(--purple-dark);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.menu-toggle {
+    display: none;
+    border: none;
+    background: var(--purple);
+    color: var(--white);
+    border-radius: 12px;
+    width: 44px;
+    height: 44px;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.eyebrow {
+    display: inline-block;
+    color: var(--purple);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 1.8;
+}
+
+h1, h2, h3 {
+    color: var(--gray-dark);
+    line-height: 1.2;
+}
+
+p {
+    color: var(--gray);
+    line-height: 1.8;
+}
+
+.button-main, .button-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 54px;
+    padding: 14px 23px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease backgrond 0.25s ease;
+} 
+
+.button-main {
+    background: var(--lime);
+    color: #202020;
+    box-shadow: 0 8px 22px rgba(173, 255, 0, 0.2);
+}
+
+.button-main:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(173, 255, 0, 0.35);
+}
+
+.button-secondary:hover {
+    border-color: var(--purple);
+    color: var(--purple);
+    transform: translateY(-3px);
+}
+
+.hero {
+    width: min(1320px, 92%);
+    min-height: 560px;
+    margin: 35px auto 80px;
+    padding: 45px 4%;
+    display: grid;
+    grid-template-columns: 1.15rf 0.85fr;
+    align-items: center;
+    gap: 55px;
+    background: var(--white);
+    border: 1px solid rgba(102, 90, 225, 0.08);
+    border-radius: 34px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.hero-content h1, .page-hero h1 {
+    margin-top: 18px;
+    font-size: clamp(38px, 5vw 66px);
+    font-weight: 900;
+    letter-spacing: -2.5px;
+}
+
+.hero-content h1 span, .page-hero h1 span {
+    color: var(--purple);
+}
+
+.hero-content > p, .page-hero > p {
+    max-width: 540px;
+    margin-top: 22px;
+    font-size: 16px;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 30px;
+}
+
+.hero-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 43px;
+}
+
+.hero-stats div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hero-stats strong {
+    color: var(--purple);
+    font-size: 20px;
+}
+
+.hero-stats span {
+    color: var(--gray);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+hero.visual {
+    min-height: 380px;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.visual-orbit {
+    position: absolute;
+    width: min(340px, 90%);
+    aspect-ratio: 1;
+    border: 2px dashed rgba(102, 90, 225, 0.25);
+    border-radius: 50%;
+    animation: rotate-orbit 24s linear infinite;
+}
+
+visual-card {
+    z-index: 1;
+    width: min(310px 90%);
+    min-height: 275px;
+    padding: 32px;
+    border-radius: 28px;
+    background: linear-gradient(145deg, #7669f0, #5142c4);
+    color: var(--white);
+    box-shadow: 0 24px 60px rgba(102, 90, 225, 0.35);
+    transform: rotate(-3deg);
+    transition: transform 0.35s ease;
+}
+
+
+.vusual-card:hover {
+    transform: rotate(0deg) translateY(-6px);
+}
+
+
+.visual-icon {
+    display: block;
+    color: var(--lime);
+    font-size: 46px;
+}
+
+.visual-label {
+    display: block;
+    margin: 15px 0;
+    color: #dedaff;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.visual-card h2 {
+    color: var(--white);
+    font-size: 28px;
+    line-height: 1.3;
+}
+
+.visual-card p {
+    margin-top: 12px;
+    color: #ece9ff;
+    font-size: 12px;
+}
+
+.visual-card a {
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--lime);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.floating-star {
+    position: absolute;
+    z-index: 2;
+    color: var(--purple);
+    animation: float-star 3s ease-in-out infinite;
+}
+
+.star-one {
+    top: 12%;
+    right: 10%;
+    font-size: 48px;
+}
+
+.star-two {
+    bottom: 10%;
+    left: 8%;
+    color: #a4db00;
+    font-size: 38px;
+    animation-delay: 0.7s;
+}
+
+@keyframes rotate-orbit {
+    to {transform: rotate(360deg);}
+}
+
+@keyframes float-star {
+    50% {transform: translateY(-12px) rotate(15deg);}
+}
