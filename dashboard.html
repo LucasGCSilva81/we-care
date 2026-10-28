@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We care | Studio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body class="dashboard-page">
+
+    <header class="site-header">
+        <a class="brand" href="index.html">We Care <span>Studio</span></a>
+        <button id="logout-button" class="buton-secondary" type="button">Sign out of account ↗</button>
+    </header>
+
+    <main class="page-container">
+        <section class="dachboard-welcome">
+            <span class="eyebrow">USER AREA</span>
+            <h1>Hello, <span id="user-name">loading...</span></h1>
+            <p>It’s great to have you here. This is your exclusive area.</p>
+        </section>
+
+        <section class="dashboard-grid">
+
+            <article class="feature-card">
+                <span class="feature-icon">◉</span>
+                <h3>My account</h3>
+                <p>Check the email linked to your account.</p>
+                <strong id="user-email" class="user-email"></strong>
+            </article>
+
+            <article class="feature-card">
+                <span class="feature-icon">✳</span>
+                <h3>Our products</h3>
+                <p>Continue exploring the solutions available in the catalog.</p>
+                <a class="card-link" href="products.html">Explore products ↗</a>
+            </article>
+
+            <article class="feature-card">
+                <span class="feature-icon">⌁</span>
+                <h3>Need help?</h3>
+                <p>Get in touch if you have any questions.</p>
+                <a class="card-link" href="contact.html">Contact us ↗</a>
+            </article>
+        </section>
+
+        <p id="dashboard-feedback" class="form-feedback" role="status"></p>
+
+    </main>
+</body>
+
+</html>

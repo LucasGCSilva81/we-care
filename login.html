@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We care | Studio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body class="auth-page">
+
+    <header class="site-header">
+        <a class="brand" href="index.html">We Care <span>Studio</span></a>
+        <a class="button-secondary" href="index.html">←Return to the website</a>
+    </header>
+
+    <main class="auth-container">
+        <section class="auth-card">
+            <div class="auth-sybol">✦</div>
+
+            <span class="eyebrow">YOUR WE CARE STUDIO ACCOUNT</span>
+            <h1>Welcome back!</h1>
+            <p class="auth-description">Log in to your account to access your exclusive area.</p>
+
+            <form id="login-form" class="auth-form">
+                <label for="login-email">E-mail</label>
+                <input id="login-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+
+                <label for="login-password">Password</label>
+                <input id="login-password" name="password" type="password" autocomplete="current-password" placeholder="Your password" required minlength="8">
+
+                <button class="button-main" type="submit">Log in to my account ↗</button>
+
+                <p id="login-feedback" class="form-feedback" role="status"></p>
+            </form>
+
+            <p class="auth-switch">Don't have an account yet?
+                <a href="register.html">Sign up</a>
+            </p>
+        </section>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We care | Studio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <header class="site-header">
+        <a class="brand" href="index.html">We Care <span>Studio</span></a>
+        <a class="button-secondary" href="index.html">←Return to the website</a>
+    </header>
+    <main class="auth-container">
+        <section class="auth-card">
+            <div class="auth-symbol">✳</div>
+
+            <span class="eyebrow">JOIN US</span>
+            <h1>Create your account</h1>
+            <p>Enter your details to begin your experience.</p>
+
+            <form id="register-form" class="auth-form">
+                <input id="register-name" name="name" type="text" autocomplete="name"
+                    placeholder="Enter your details to begin your experience." required minlength="2" maxlength="8">
+
+                <label for="register-email">E-mail</label>
+                <input id="register-email" name="email" type="email" autocomplete="email" placeholder="you@example.com"
+                    required>
+
+                <label for="register-password">Create your password</label>
+                <input id="register-password" name="password" type="password" autocomplete="new-password"
+                    placeholder="Minimum of 8 characters" required minlength="8">
+
+                <label for="register-confirm">Confirm your password</label>
+                <input id="register-confirm" name="confirm" type="password" autocorrect="new-password"
+                    placeholder="Enter the password again" required minlength="8">
+
+                <button class="button-main" type="submit">Create my account ↗</button>
+                <p id="register-feedback" class="form-feedback" role="status"></p>
+            </form>
+
+            <p class="auth-switch">
+                Already have an account?
+                <a href="login.html">Log in</a>
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>
