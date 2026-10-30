@@ -15,10 +15,10 @@ function showMessage(elementId, message, type = "error") {
 }
 
 function friendlyError(error) {
-    console.error("Erro de autenticação", error);
+    console.error("Authentication error", error);
 
 
-    return "Não foi possível concluir a operação. Confira os dados e tente novamente.";
+    return "The operation could not be completed. Check the information and try again.";
 
 }
 
@@ -31,7 +31,7 @@ if (loginForm) {
         const password = loginForm.elements.password.value;
 
         button.disabled = true;
-        button.textContent = "Verificando...";
+        button.textContent = "Checking...";
         showMessage("login-feedback", "");
 
         try {
@@ -43,7 +43,7 @@ if (loginForm) {
             if (error) {
                 showMessage(
                     "login-feedback",
-                    "Não foi possível entrar. Confira seu e-mail e senha."
+                    "Unable to sign in. Please check your email and password."
                 );
                 return;
             }
@@ -53,7 +53,7 @@ if (loginForm) {
             showMessage("login-feedback", friendlyError(error));
         } finally {
             button.disabled = false;
-            button.textContent = "Entrar na minha conta ↗";
+            button.textContent = "Log in to my account ↗";
         }
     });
 }
@@ -73,19 +73,19 @@ if (registerForm) {
         if (password !== confirmPassword) {
             showMessage(
                 "register-feedback",
-                "As senhas não são iguais."
+                "The passwords do not match."
             );
             return;
         }
 
         if (password.length < 8) {
             showMessage(
-                "register-feedback", "A senha precisa ter pelo menos 8 caracteres."
+                "register-feedback", "The password must be at least 8 characters long."
             );
         }
 
         button.disabled = true;
-        button.textContent = "Criando conta...";
+        button.textContent = "Creating account...";
 
 
         try {
@@ -102,7 +102,7 @@ if (registerForm) {
 
             if (error) {
                 showMessage(
-                    "register-feedback", "Não foi possível concluir o cadastro. Confira os dados e tente novamente."
+                    "register-feedback", "NUnable to complete the registration. Please check the information and try again."
                 );
                 return;
             }
@@ -114,7 +114,7 @@ if (registerForm) {
 
             showMessage(
                 "register-feedback",
-                "Cadastro iniciado! Confira seu e-mail para confirmar a conta antes de entrar.",
+                "Registration started! Check your email to confirm your account before logging in.",
                 "success"
             );
 
@@ -123,7 +123,7 @@ if (registerForm) {
             showMessage("register-feedback", friendlyError(error));
         } finally {
             button.disabled = false;
-            button.textContent = "Crfiar uma conta  ↗"
+            button.textContent = "Create an account  ↗"
         }
 
     });

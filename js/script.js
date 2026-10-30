@@ -9,7 +9,7 @@ if (menuToggle && navLinks) {
         const menuAberto = navLinks.classList.toggle("open");
 
     menuToggle.setAttribute("aria-expanded", String(menuAberto));
-    menuToggle.setAttribute("aria-label", menuAberto ? "Fechar menu" : "Abrir menu");
+    menuToggle.setAttribute("aria-label", menuAberto ? "Close menu" : "Open menu");
     
     menuToggle.textContent = menuAberto ? "X" : "☰";
     });
@@ -18,7 +18,7 @@ if (menuToggle && navLinks) {
         link.addEventListener("click", () => {
             navLinks.classList.remove("open");
             menuToggle.setAttribute("aria-expanded" , false);
-            menuToggle.setAttribute("aria-label" , "Abrir menu");
+            menuToggle.setAttribute("aria-label" , "Open menu");
             menuToggle.textContent = "☰";
         });
     });
@@ -96,7 +96,7 @@ function filterProducts() {
 
     if (productCount) {
         productCount.textContent =
-            `${quantidadeVisivel} produto(s) encontrado(s).`;
+            `${quantidadeVisivel} product(s) found(s).`;
     }
 
     if (noProducts) {
@@ -155,7 +155,7 @@ if (contactForm && formFeedback) {
         }
 
         formFeedback.textContent =
-            "Validação concluída! Este formulário ainda não envia mensagens ao servidor.";
+            "Validation complete! This form does not yet send messages to the server.";
         formFeedback.className = "form-feedback success";
 
 

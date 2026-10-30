@@ -1,8 +1,8 @@
 import { createClient } from 
  "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm";
 
- const SUPABASE_URL = "SUA_URL_DO_PROJETO";
- const SUPABASE_PUBLISHABLE_KEY = "SUA_CHAVE_PUBLICA";
+ const SUPABASE_URL = "YOUR_PROJECT_URL";
+ const SUPABASE_PUBLISHABLE_KEY = "YOUR_PUBLIC_KEY";
 
  export const supabase = createClient(
     SUPABASE_URL,
