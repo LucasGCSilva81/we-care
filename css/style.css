@@ -282,7 +282,7 @@ p {
     display: block;
     margin-bottom: 18px;
     color: #adff00;
-    font-size: 38px;   
+    font-size: 38px;
 }
 
 .visual-card .visual-label {
@@ -312,12 +312,12 @@ p {
 }
 
 .visual-card a {
-   display: inline-block;
-   color: var(--lime);
-   font-size: 13px;
-   font-weight: 800;
-   text-decoration: none;
-   transition: transform 0.3s ease;
+    display: inline-block;
+    color: var(--lime);
+    font-size: 13px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: transform 0.3s ease;
 }
 
 .visual-card a:hover {
@@ -414,7 +414,7 @@ p {
 }
 
 
-.feature-card p{
+.feature-card p {
     margin-top: 12px;
     font-size: 13px;
 }
@@ -427,7 +427,7 @@ p {
     font-weight: 800;
 }
 
-.section-block > .button-main {
+.section-block>.button-main {
     margin-top: 35px;
 }
 
@@ -479,7 +479,7 @@ p {
     font-size: 14px;
 }
 
-.about-grid + .section-block {
+.about-grid+.section-block {
     margin-top: 75px;
 }
 
@@ -493,7 +493,11 @@ p {
     gap: 15px;
 }
 
-.catalog-controls input, .catalog-controls select, .contact-form input, .contact-form select, .contact-form textarea {
+.catalog-controls input,
+.catalog-controls select,
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
     width: 100%;
     padding: 15px;
     border: 1px solid var(--border);
@@ -503,7 +507,11 @@ p {
     font-size: 13px;
 }
 
-.catalog-controls input:focus, .catalog-controls select:focus, .contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus {
+.catalog-controls input:focus,
+.catalog-controls select:focus,
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
     border-color: var(--purple);
     outline: 2px solid rgba(102, 90, 225, 0.12);
 
@@ -550,11 +558,11 @@ p {
 }
 
 .art-green {
-     background: linear-gradient(135deg, #d7ff89, #82bd00);
+    background: linear-gradient(135deg, #d7ff89, #82bd00);
 }
 
 .art-coral {
-     background: linear-gradient(135deg, #ffb6a6, #f07872);
+    background: linear-gradient(135deg, #ffb6a6, #f07872);
 }
 
 .product-info {
@@ -658,7 +666,7 @@ p {
     font-size: 32px;
 }
 
-.contact-intro > p {
+.contact-intro>p {
     margin-top: 15px;
     color: #e9e7ff;
     font-size: 14px;
@@ -775,7 +783,7 @@ p {
         display: flex;
     }
 
-    .nav-links > a {
+    .nav-links>a {
         padding: 13px;
     }
 
@@ -788,7 +796,8 @@ p {
         min-height: 340px;
     }
 
-    .feature-grid, .contact-layout {
+    .feature-grid,
+    .contact-layout {
         grid-template-columns: 1fr;
     }
 
@@ -809,12 +818,14 @@ p {
         border-radius: 23px;
     }
 
-    .hero-content h1, .page-hero h1 {
+    .hero-content h1,
+    .page-hero h1 {
         font-size: clamp(35px, 10vw, 48px);
         letter-spacing: -1.5px;
     }
 
-    .hero-content > p, .page-hero > p {
+    .hero-content>p,
+    .page-hero>p {
         font-size: 14px;
     }
 
@@ -834,7 +845,8 @@ p {
         padding: 25px;
     }
 
-    .feature-grid, .product-grid {
+    .feature-grid,
+    .product-grid {
         grid-template-columns: 1fr;
     }
 
@@ -846,7 +858,10 @@ p {
         margin-bottom: 15px;
     }
 
-    .page-hero, .about-highlight, .contact-intro, .contact-form {
+    .page-hero,
+    .about-highlight,
+    .contact-intro,
+    .contact-form {
         padding: 25px;
         border-radius: 22px;
     }
@@ -859,13 +874,17 @@ p {
         min-height: 180px;
     }
 
-    .button-main, .button-secondary {
+    .button-main,
+    .button-secondary {
         font-size: 13px;
     }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after {
+
+    *,
+    *::before,
+    *::after {
         scroll-behavior: auto !important;
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
@@ -880,10 +899,9 @@ p {
 
 .auth-page {
     min-height: 100vh;
-    background: radial-gradient(circle at 15% 20%, #e6e1ff 0, transparent 32%);,
-    radial-gradient(circle at 15% 20% #efffd0 0, trasnparent 28% ),
-    var(--background)
+    background: radial-gradient(circle at 15% 20%, #e6e1ff 0, transparent 32%), radial-gradient(circle at 85% 80% #efffd0 0, transparent 28%), var(--backgound);
 }
+
 
 .auth-card {
     padding: clamp(25px, 6vw, );
@@ -949,7 +967,7 @@ p {
     border-color: var(--purple);
     outline: none;
     box-shadow: 0 0 0 4px rgba(102, 90, 255, 0.10);
-    
+
 }
 
 .auth-form .button-main {
@@ -999,7 +1017,7 @@ p {
 .dashboard-welcome p {
     margin-top: 12px;
     color: #eeecff;
-    font-size: 14px;   
+    font-size: 14px;
 }
 
 .dashboard-grid {
@@ -1040,8 +1058,242 @@ p {
     }
 }
 
-@madia (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion: reduce) {
     .auth-card {
-        animation:none;
+        animation: none;
+    }
+}
+
+
+.chatbot {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 9999;
+    font-family: "Montserrat", sans-serif;
+}
+
+.chatbot-toggle {
+    display: grid;
+    place-items: center;
+    width: 62px;
+    height: 62px;
+    border: 2px solid #adff00;
+    border-radius: 50%;
+    background: #665ae1;
+    color: #adff00;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 0 8px 25px rgba(102, 90, 225, 0.35);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.chatbot-toggle:hover {
+    transform: translateY(-4px);
+    background: #5142c4;
+}
+
+.chatbot-window {
+    position: absolute;
+    right: 0;
+    bottom: 78px;
+    width: min(360px, calc(100vw - 32px));
+    max-height: min(540px, calc(100vh - 120px));
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid rgba(102, 90, 225, 0.2);
+    ;
+    border-radius: 22px;
+    background: #ffffff;
+    box-shadow: 0 20px 60px rgba(30, 20, 80, 0.22);
+    animation: chatbot-appear 0.25s ease;
+}
+
+.chatbot-window[hidden] {
+    display: none;
+}
+
+.chatbot-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: #665ae1;
+    color: #ffffff;
+}
+
+.chatbot-header h2 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.chatbot-header p {
+    width: auto;
+    margin: 5px 0 0;
+    color: #f0edff;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.chatbot-status {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    margin-right: 6px;
+    border-radius: 50%;
+    background: #adff00;
+}
+
+.chatbot-close {
+    border: none;
+    background: transparent;
+    color: #ffffff;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.chatbot-messages {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-height: 150px;
+    max-height: 240px;
+    overflow-y: auto;
+    padding: 18px;
+    background: #faf9ff;
+}
+
+.chat-message {
+    max-width: 90%;
+    padding: 12px 14px;
+    border-radius: 14px;
+    font-size: 13px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.bot-message {
+    align-self: flex-start;
+    background: #eeeaff;
+    color: #30265f;
+    border-bottom-left-radius: 4px;
+}
+
+.user-message {
+    align-items: flex-end;
+    background: #665ae1;
+    color: #ffffff;
+    border-top-right-radius: 4px;
+}
+
+.chatbot-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 12px 16px;
+    background: #faf9ff;
+}
+
+.chatbot-options button {
+    padding: 8px 11px;
+    border: 1px solid #665ae1;
+    border-radius: 20px;
+    background: #ffffff;
+    color: #5142c4;
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.chatbot-options button:hover {
+    background: #adff00;
+    border-color: #adff00;
+    color: #30265f;
+}
+
+.chatbot-form {
+    display: flex;
+    gap: 18px;
+    padding: 14px;
+    border-top: 1px solid #eeeaff;
+    background: #ffffff;
+}
+
+.chatbot-form input {
+    min-height: 0;
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ded9ff;
+    border-radius: 10px;
+    outline: none;
+    font-family: inherit;
+    font-size: 12px;
+}
+
+.chatbot-form input:focus {
+    border-color: #665ae1;
+    box-shadow: 0 0 0 3px rgba(102, 90, 225, 0.12);
+}
+
+.chatbot-form button {
+    padding: 0 14px;
+    border: none;
+    border-radius: 10px;
+    background: #adff00;
+    color: #29204f;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.chatbot-form button:hover {
+    background: #98e600;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: now-rap;
+    border: 0;
+}
+
+@keyframes chatbot-appear {
+    from {
+        opacity: 0;
+        transform: translateY(12px) scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@media (max-width: 480px) {
+    .chabot {
+        right: 16px;
+        bottom: 16px;
+    }
+
+    .chatbot-toggle {
+        width: 56px;
+        height: 56px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .chatbot-toggle, .chatbot-window {
+        animation: none;
+        transition: none;
     }
 }

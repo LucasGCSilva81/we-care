@@ -47,6 +47,62 @@
         </section>
     </main>
 
+    <div class="chatbot">
+
+        <button class="chatbot-toggle" id="chatbot-toggle" type="button" aria-label="Open virtual assistant"
+            aria-expanded="false" aria-controls="chatbot-window">💬</button>
+
+        <section class="chatbot-window" id="chatbot-window" aria-label="We Care Studio virtual assistant" hidden>
+
+            <header class="chatbot-header">
+
+                <div>
+
+                    <span class="chatbot-status"></span>
+                    <h2>We Care Assistant</h2>
+                    <p>How can I help you today?</p>
+
+                </div>
+
+                <button class="chatbot-close" id="chatbot-close" type="button" aria-label="Close assistant">
+                    &times;
+                </button>
+                
+            </header>
+
+            <div class="chatbot-messages" id="chatbot-messages" aria-live="polite">
+                <div class="chtbot-message bot-message">
+                    Hi! Welcome to We Care Studio.
+                    How can I help you today?
+                </div>
+            </div>
+
+            <div class="chatbot-options">
+                <button type="button" data-question="about">
+                    About us
+                </button>
+
+                <button type="button" data-question="products">
+                    Products
+                </button>
+
+                <button type="button" data-question="account">
+                    My account
+                </button>
+
+                <button type="button" data-question="contact">
+                    Contact
+                </button>
+            </div>
+
+            <form class="chatbot-form" id="chatbot-form">
+                <label class="sr-only" for="chatbot-input"></label>
+                <input type="text" id="chatbot-input" placeholder="Type your question..." autocomplete="off">
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </div>
+
 </body>
 
 </html>
