@@ -133,7 +133,7 @@ we-care/
  <img src="https://github.com/LucasGCSilva81/we-care/blob/main/assets/WhatsApp%20Image%202026-11-04%20at%2010.59.07.jpeg?raw=true">
  <img src="https://github.com/LucasGCSilva81/we-care/blob/main/assets/WhatsApp%20Image%202026-11-04%20at%2010.59.37.jpeg?raw=true">
  <img src="https://github.com/LucasGCSilva81/we-care/blob/main/assets/WhatsApp%20Image%202026-11-04%20at%2010.59.57.jpeg?raw=true">
- 
+ <img src="https://github.com/LucasGCSilva81/we-care/blob/main/assets/WhatsApp%20Image%202026-11-04%20at%2011.00.17.jpeg?raw=true">
     
 
 
